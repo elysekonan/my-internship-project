@@ -11,6 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { RegistrationComponentComponent } from './registration-component/registration-component.component';
 
+
 const routes: Routes = [
   {path:'login', component: HomeComponent},
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -27,7 +28,7 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
